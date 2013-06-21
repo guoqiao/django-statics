@@ -23,16 +23,6 @@
 
     <body>
         <div id="header">{% block header %}{% endblock %}</div>
-        {% if messages %}
-        <ul class="messages">
-            {% for message in messages %}
-            <li{% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}>
-            <button type="button" class="close" data-dismiss="alert">×</button>
-            {{ message }}
-            </li>
-            {% endfor %}
-        </ul>
-        {% endif %}
         <div id="container" class='container'>
             <div id="content">{% block content %}{% endblock %}</div>
         </div>
