@@ -1,0 +1,10 @@
+
+=============
+django-statics
+=============
+
+Contents:
+
+.. toctree::
+
+    usage

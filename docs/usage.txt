@@ -1,0 +1,7 @@
+
+=====
+Usage
+=====
+ just install and extend form the base
+
+ add `statics` to INSTALLED_APPS, and enjoy!
