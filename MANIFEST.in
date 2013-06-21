@@ -1,3 +1,7 @@
 include AUTHORS
 include LICENSE
+include MANIFEST.in
+include README.md
 recursive-include docs *
+recursive-include statics/static *
+recursive-include statics/templates *

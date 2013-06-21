@@ -1,27 +1,15 @@
-from distutils.core import setup
-
+from setuptools import setup, find_packages
 
 setup(
     name="django-statics",
-    version=__import__("statics").__version__,
+    version='0.1.0',
     description="A reusable Django app for static files",
-    long_description=open("docs/usage.txt").read(),
+    long_description=open("README.md").read(),
     author="guoqiao",
     author_email="guoqiao@gmail.com",
+    license="MIT",
+    keywords="django",
     url="https://github.com/guoqiao/django-statics",
-    packages=[
-        "statics",
-        #"statics.management",
-        #"statics.management.commands",
-    ],
-    package_dir={"statics": "statics"},
-    classifiers=[
-        "Development Status :: 1 - Beta",
-        "Environment :: Web Environment",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-        "Programming Language :: Python",
-        "Framework :: Django",
-    ]
+    packages=find_packages(),
+    include_package_data=True,
 )
